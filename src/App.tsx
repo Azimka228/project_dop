@@ -4,6 +4,7 @@ import {Header} from "./components/Header/Header";
 import Body from "./components/Body/Body";
 import NewComponent from "./components/NewComponent";
 import Button from "./components/Button/button";
+import UseState from "./components/useState/useState";
 
 
 
@@ -33,6 +34,9 @@ function App() {
         <Button title={'ALL CASH'} callBack={() => fooTest('Test')}/>
         <Button title={'DOLLAR'} callBack={() => fooTest('Test')}/>
         <Button title={'RUBLE'} callBack={() => fooTest('Test')}/>
+            <div>
+                <UseState/>
+            </div>
 
     </div>
   );
