@@ -3,6 +3,7 @@ import './App.css';
 import {Header} from "./components/Header/Header";
 import Body from "./components/Body/Body";
 import NewComponent from "./components/NewComponent";
+import Button from "./components/Button/button";
 
 
 
@@ -20,11 +21,19 @@ function App() {
         {id: 10, name: "Charles", age: 98},
         {id: 11, name: "Christopher", age: 100},
     ]
+    const fooTest = (name:string) => {
+        console.log(name)
+    }
   return (
     <div className="App">
       <Header title ={"Header"}/>
       <Body title={"Body"}/>
         <NewComponent students={students}/>
+
+        <Button title={'ALL CASH'} callBack={() => fooTest('Test')}/>
+        <Button title={'DOLLAR'} callBack={() => fooTest('Test')}/>
+        <Button title={'RUBLE'} callBack={() => fooTest('Test')}/>
+
     </div>
   );
 }
