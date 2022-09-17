@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import {Header} from "./components/Header/Header";
 import Body from "./components/Body/Body";
-import NewComponent from "./components/NewComponent";
+import NewComponent from "./components/NewComponent/NewComponent";
 import Button from "./components/Button/button";
 import UseState from "./components/useState/useState";
 
